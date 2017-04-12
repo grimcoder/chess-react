@@ -107,8 +107,12 @@ class App extends  Component {
 
                 cells.push(<td className={bg} key={y+'-'+x}></td>)
             }
+            cells.push(<td className='numbers' key={chr+1}>{chr}</td>)
+
             row = <tr key={x}>{cells}</tr>
+
             rows.push(row);
+
         }
 
 
